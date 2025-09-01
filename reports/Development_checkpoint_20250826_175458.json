@@ -1,0 +1,39 @@
+{
+  "specs": {},
+  "functional_spec_count": {},
+  "testsuites": [
+    {
+      "cases": [
+        {
+          "classname": "testCases.test_login",
+          "name": "test_homePageTitle",
+          "developer": "-",
+          "test_description": "",
+          "status": "Passed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "",
+          "functional_specifications": [],
+          "categories": []
+        },
+        {
+          "classname": "testCases.test_login",
+          "name": "test_login",
+          "developer": "-",
+          "test_description": "",
+          "status": "Failed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "Message: assert False\nDetails: self = <testCases.test_login.Test_001_Login object at 0x000002BB16119040>, setup = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"1674b7a349038c908749e9bce6d04bdf\")>\n\n    def test_login(self, setup):\n         self.driver = setup\n    \n         self.driver.get(self.baseURL)\n         self.lp = LoginPage(self.driver)\n         self.lp.setUserName(self.username)\n         self.lp.setPassword(self.password)\n         self.lp.clickLogin()\n         act_title = self.driver.title\n         # self.driver.close()\n         if act_title== \"Dashboard / nopCommerce administration12\":\n             assert  True\n    \n         else:\n            self.driver.save_screenshot(\".\\\\Screenshots\\\\\" + \"test_login.png\")\n            # self.driver.save_screenshot(\".\\\\Screenshots\\\\\"+\"test_login.png\")\n    \n>           assert False\nE           assert False\n\ntestCases\\test_login.py:44: AssertionError",
+          "functional_specifications": [],
+          "categories": []
+        }
+      ]
+    }
+  ],
+  "test_environment": "Development",
+  "timestamp": "26 Aug 2025, 17:55",
+  "img_url": "https://icon.icepanel.io/Technology/svg/pytest.svg",
+  "test_status": "complete",
+  "report_title": "pytest HTML Report",
+  "category_count": {},
+  "all_categories": []
+}

@@ -1,0 +1,39 @@
+{
+  "specs": {},
+  "functional_spec_count": {},
+  "testsuites": [
+    {
+      "cases": [
+        {
+          "classname": "testCases.test_login",
+          "name": "test_homePageTitle",
+          "developer": "-",
+          "test_description": "",
+          "status": "Failed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "Message: assert False\nDetails: self = <testCases.test_login.Test_001_Login object at 0x0000017369926EA0>, setup = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"e727a011b384491a74629cb412782fe8\")>\n\n    def test_homePageTitle(self, setup):\n        # inside this method create driver\n        self.driver=setup\n        self.driver.get(self.baseURL)\n        act_title = self.driver.title\n        if act_title == \"nopCommerce demo store. Login12\":\n            assert True\n    \n        else:\n            self.driver.save_screenshot(\".\\\\Screenshots\\\\\"+\"test_homePageTitle.png\")\n            self.driver.close()\n>           assert False\nE           assert False\n\ntestCases\\test_login.py:24: AssertionError",
+          "functional_specifications": [],
+          "categories": []
+        },
+        {
+          "classname": "testCases.test_login",
+          "name": "test_login",
+          "developer": "-",
+          "test_description": "",
+          "status": "Passed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "",
+          "functional_specifications": [],
+          "categories": []
+        }
+      ]
+    }
+  ],
+  "test_environment": "Development",
+  "timestamp": "25 Aug 2025, 18:49",
+  "img_url": "https://icon.icepanel.io/Technology/svg/pytest.svg",
+  "test_status": "complete",
+  "report_title": "pytest HTML Report",
+  "category_count": {},
+  "all_categories": []
+}

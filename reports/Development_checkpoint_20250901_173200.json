@@ -1,0 +1,39 @@
+{
+  "specs": {},
+  "functional_spec_count": {},
+  "testsuites": [
+    {
+      "cases": [
+        {
+          "classname": "testCases.test_login",
+          "name": "test_homePageTitle",
+          "developer": "-",
+          "test_description": "",
+          "status": "Failed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "Message: assert False\nDetails: self = <testCases.test_login.Test_001_Login object at 0x000002A5EF6A6900>, setup = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"fe97382c30bdb6db2b0bd65d507efcab\")>\n\n    def test_homePageTitle(self, setup):\n        # inside this method create driver\n    \n        self.logger.info(\" ******* Test_001_Login *******\")\n        self.logger.info(\" ******* verifying home page title *******\")\n        self.driver=setup\n        self.driver.get(self.baseURL)\n        act_title = self.driver.title\n        # if act_title != \"nopCommerce demo store. Login\":\n        #     self.driver.save_screenshot(\".\\\\Screenshots\\\\test_homePageTitle.png\")\n        # self.logger.info(\" ******* home page title is failed *******\")\n        # assert act_title == \"nopCommerce demo store. Login1\", f\"Expected title did not match. Got: {act_title}\"\n        # self.logger.info(\" ******* home page title is passed *******\")\n        # self.driver.close()\n    \n        if act_title == \"nopCommerce demo store. Login121122\":\n            self.logger.info(\" ******* home page title is passed *******\")\n            assert True\n    \n        else:\n            self.driver.save_screenshot(\".\\\\Screenshots\\\\\"+\"test_homePageTitle.png\")\n            self.logger.info(\" ******* home page title is failed *******\")\n            # self.driver.close()\n>           assert False\nE           assert False\n\ntestCases\\test_login.py:46: AssertionError",
+          "functional_specifications": [],
+          "categories": []
+        },
+        {
+          "classname": "testCases.test_login",
+          "name": "test_login",
+          "developer": "-",
+          "test_description": "",
+          "status": "Passed",
+          "logs": "<ul style='list-style-type: none; padding: 0;'></ul>",
+          "details": "",
+          "functional_specifications": [],
+          "categories": []
+        }
+      ]
+    }
+  ],
+  "test_environment": "Development",
+  "timestamp": "01 Sep 2025, 17:32",
+  "img_url": "https://icon.icepanel.io/Technology/svg/pytest.svg",
+  "test_status": "complete",
+  "report_title": "pytest HTML Report",
+  "category_count": {},
+  "all_categories": []
+}
