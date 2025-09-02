@@ -35,7 +35,7 @@ class Test_001_Login:
         # self.logger.info(" ******* home page title is passed *******")
         # self.driver.close()
 
-        if act_title == "nopCommerce demo store. Login121122":
+        if act_title == "nopCommerce demo store. Login":
             self.logger.info(" ******* home page title is passed *******")
             assert True
 
